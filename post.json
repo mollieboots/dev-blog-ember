@@ -1,0 +1,14 @@
+{ "posts": [{
+  "author" : "Michael",
+  "body" : "Here's my body!",
+  "date" : "3/30/16",
+  "image" : "http://i.imgur.com/JIZFAbv.png",
+  "title" : "My First Blog Post!"
+  }, {
+  "author" : "Michael",
+  "body" : "Dong is great",
+  "date" : "3/31/16",
+  "image" : "http://i.imgur.com/JIZFAbv.png",
+  "title" : "Confession"
+  }]
+}
