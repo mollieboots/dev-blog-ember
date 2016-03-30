@@ -10,5 +10,14 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
 
+    updatePost: function(post, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          post.set(key,params[key]);
+        }
+      });
+      post.save();
+    }
+
   }
 });
