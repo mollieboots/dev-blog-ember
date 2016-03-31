@@ -1,14 +1,20 @@
 <div class="col-md-6 body-col col-md-offset-3">
   <p>index.hbs</p>
 
-    {{#each model as |post|}}
+    {{#each model.posts as |post|}}
       {{post-tile post=post}}
     {{/each}}
 </div>
 <div class="col-md-3 side-col">
   <h3>All Posts</h3>
-  {{#each model as |post|}}
+  {{#each model.posts as |post|}}
     <li>{{post.title}}</li>
   {{/each}}
-  {{post-new post=model save="save"}}
+  
+
+  <h3>All Authors</h3>
+  {{#each model.authors as |author|}}
+    {{#link-to 'author' author.id}}<li>{{author.name}}</li>{{/link-to}}
+  {{/each}}
+  {{new-author author=model saveAuthor="saveAuthor"}}
 </div>

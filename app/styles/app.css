@@ -43,6 +43,8 @@ h1, h2, h3, h4, h5 {
   height: 75px;
   clear: both;
   text-align: center;
+  background-color: #555;
+  color: #EEE !important;
 }
 
 .new-post-container {
@@ -59,10 +61,20 @@ a:hover {
 }
 
 .header-link {
+  color: white !important;
+  text-decoration: none;
+}
+
+.header-link:focus:visited {
+  text-decoration: none !important;
+}
+
+.footer-link a {
   color: #EEE !important;
   text-decoration: none;
 }
 
-.header-link:focus {
-  text-decoration: none !important;
+.footer-link a:hover {
+  color: black !important;
+  text-decoration: none;
 }

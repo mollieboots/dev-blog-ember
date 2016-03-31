@@ -1,0 +1,15 @@
+<div class="col-md-6 col-md-offset-3 body-col">
+  <h1>{{model.name}}</h1>
+
+  {{#each model.posts as |post|}}
+    <hr>
+    <h3>{{post.title}}</h3>
+    <p>{{post.date}}</p>
+    <div class="image-container">
+      <img class="post-image" src={{post.image}} alt={{post.title}} />
+    </div>
+  {{/each}}
+  <hr>
+  {{post-new save="save" author=model}}
+
+</div>

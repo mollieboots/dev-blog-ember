@@ -1,0 +1,12 @@
+<div class="new-post-container container">
+    <h1>New Author</h1>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          {{input class="form-control" value=name id="name"}}
+        </div>
+        <button class="btn btn-success" {{action 'saveAuthor'}}>Save</button>
+      </form>
+    </div>
+</div>
