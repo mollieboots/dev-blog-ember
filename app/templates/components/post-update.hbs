@@ -1,6 +1,6 @@
 <p>post-update.hbs</p>
-
-<div class="container">
+{{#if postUpdateForm}}
+<div>
   <form>
   <h3>Edit Form</h3>
   <div class="form-group">
@@ -24,5 +24,10 @@
     {{input class="form-control" value=image id="image" placeholder=post.image}}
   </div>
   <button class="btn btn-success" {{action 'updatePost' post}}>Update</button>
+  <button class="btn btn-primary" {{action 'updatePostFormHide'}}>JK, NVM</button>
   </form>
 </div>
+{{else}}
+  <button type="button" class="btn btn-info" {{action 'postUpdateFormShow'}}>Edit this Post</button>
+
+{{/if}}

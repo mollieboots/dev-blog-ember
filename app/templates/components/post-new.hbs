@@ -1,7 +1,7 @@
 <p>post-new.hbs</p>
-
-<div class="container">
-    <h1>New Rental</h1>
+{{#if newPostForm}}
+<div class="new-post-container container">
+    <h1>New Post</h1>
     <div>
       <form>
         <div class="form-group">
@@ -30,6 +30,10 @@
         </div>
 
         <button class="btn btn-success" {{action 'save'}}>Save</button>
+        <button class="btn btn-primary" {{action 'newPostFormHide'}}>JK, NVM</button>
       </form>
     </div>
 </div>
+{{else}}
+  <button type="button" class="btn btn-success" {{action 'newPostFormShow'}}>New Post</button>
+{{/if}}

@@ -1,6 +1,6 @@
 <div class="jumbotron">
   <div class="container">
-    <h1>Dev Blog</h1>
+    {{#link-to 'index'}}<h1 class="header-link">Dev Blog</h1>{{/link-to}}
   </div>
 </div>
 
@@ -8,7 +8,6 @@
 
 <div class="footer">
   <div class="container">
-    {{#link-to 'about'}}About{{/link-to}}
-    {{#link-to 'contact'}}Contact{{/link-to}}
+    <h3>{{#link-to 'about'}}About{{/link-to}} | {{#link-to 'contact'}}Contact{{/link-to}}</h3>
   </div>
 </div>

@@ -1,13 +1,38 @@
 body {
   font-family: 'Lato', sans-serif;
+  background-color: #EEE;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Arvo', serif;
+}
+
+.jumbotron {
+  background-color: #555;
+  color: #EEE;
+  margin-bottom: 0px;
 }
 
 .body-col {
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+.side-col {
   text-align: center;
 }
 
 .post-tile {
+  margin-bottom: 20px;
+}
 
+.image-container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.post-image {
+  width: 100%;
 }
 
 .post-title, .post-author, .post-date, .post-body {
@@ -15,6 +40,29 @@ body {
 }
 
 .footer {
+  height: 75px;
   clear: both;
   text-align: center;
+}
+
+.new-post-container {
+  max-width: 100%;
+}
+
+a {
+  color: #555;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.header-link {
+  color: #EEE !important;
+  text-decoration: none;
+}
+
+.header-link:focus {
+  text-decoration: none !important;
 }
